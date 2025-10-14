@@ -1,2 +1,7 @@
 [build]
   command = "npx convex deploy --cmd 'npm run build'"
+
+[[redirects]]
+  from = "/*"
+  to = "/index.html"
+  status = 200

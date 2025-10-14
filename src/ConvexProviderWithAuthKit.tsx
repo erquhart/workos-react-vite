@@ -2,7 +2,7 @@ import { ReactNode, useCallback, useMemo } from 'react';
 import { ConvexProviderWithAuth } from 'convex/react';
 
 type IConvexReactClient = {
-  setAuth(fetchToken: () => Promise<string | null>): void;
+  setAuth(fetchToken: (args: { forceRefreshToken: boolean }) => Promise<string | null>): void;
   clearAuth(): void;
 };
 
